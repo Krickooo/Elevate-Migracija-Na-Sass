@@ -1,0 +1,86 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $padding-large;
+
+  .content {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 48px;
+    color: $color-accent;
+  }
+
+  .p {
+    font-size: 18px;
+  }
+
+  .img {
+    width: 40%;
+  }
+
+  @include respond($breakpoint-extra-small) {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .content {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .img {
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+}
+
+/* Cards */
+.card-list {
+  display: flex;
+  justify-content: space-between;
+
+  @include respond($breakpoint-medium) {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  @include respond($breakpoint-extra-small) {
+    gap: 20px;
+  }
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 27%;
+  border-radius: 10px;
+  box-shadow: $shadow-default;
+
+  @include respond($breakpoint-medium) {
+    width: 80%;
+  }
+
+  @include respond($breakpoint-extra-small) {
+    width: 100%;
+  }
+}
+
+/* Features & Center Sections */
+.features {
+  background: $color-bg-light;
+}
+
+.center-section {
+  text-align: center;
+  padding: $padding-medium;
+}

@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'primary-btn';
+@import 'header';
+@import 'content';
+@import 'footer';
+
+/* General Styles */
+body {
+  font-family: $font-main;
+  color: $color-text;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 32px;
+}
